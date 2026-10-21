@@ -32,11 +32,12 @@ Update the effective date at the same time, and update the Play Data safety form
 
 Checked against the app on 21 October 2026. Items marked **TODO** must be done in the app before release.
 
+- The Health Connect rationale screen links this policy (`ScreensTest.privacyNote_opensThePrivacyPolicy`).
 - Read-only Health Connect: steps, distance, floors, sleep, heart rate, resting HR, exercise, plus history and background read. A test (`app`) checks that the manifest has no WRITE permissions.
 - Analytics events never carry health values (`core/analytics/.../AnalyticsEvent.kt` is the full list).
-- **TODO:** a Settings → "Share anonymous usage stats" switch that stops Analytics and Crashlytics. The consent flag exists in `core:datastore`, but the Settings screen is milestone 2.
-- **TODO:** remove the advertising ID permission (`com.google.android.gms.permission.AD_ID`) that Firebase merges in, as Recover does.
-- **TODO:** keep health-derived data out of cloud backup. The app has `allowBackup="true"`, and the Room snapshots hold daily totals. Exclude the database, or disable backup.
+- Opting out stops Analytics and Crashlytics and resets the app-instance id, at startup and on change (`AnalyticsConsentTest`). **TODO:** the Settings switch UI itself (milestone 2); it calls `AnalyticsConsent.set(enabled)`.
+- No advertising ID or ad-services permissions in the merged manifest (`ManifestTest.noAdvertisingId`).
+- No cloud backup or device transfer of app data: `allowBackup="false"` plus `data_extraction_rules.xml` (`ManifestTest.healthDerivedData_isNotBackedUpOrTransferred`).
 - **TODO:** set Firebase Analytics data retention to 14 months in the Firebase console.
 
 ## Preview locally
