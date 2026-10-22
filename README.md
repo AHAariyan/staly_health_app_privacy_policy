@@ -33,7 +33,8 @@ Update the effective date at the same time, and update the Play Data safety form
 Checked against the app on 21 October 2026. Items marked **TODO** must be done in the app before release.
 
 - The Health Connect rationale screen links this policy (`ScreensTest.privacyNote_opensThePrivacyPolicy`).
-- Read-only Health Connect: steps, distance, floors, sleep, heart rate, resting HR, exercise, plus history and background read. A test (`app`) checks that the manifest has no WRITE permissions.
+- Phone-measured data (Physical activity permission; Recording API steps, Sleep API estimate, brisk-walking minutes, estimated distance and calories) is stored only on the device and never uploaded (all-in-one pivot, 2026-10-22).
+- Optional, read-only Health Connect import: steps, distance, floors, sleep, heart rate, resting HR, exercise, plus history and background read. A test (`app`) checks that the manifest has no WRITE permissions.
 - Analytics events never carry health values (`core/analytics/.../AnalyticsEvent.kt` is the full list).
 - Opting out stops Analytics and Crashlytics and resets the app-instance id, at startup and on change (`AnalyticsConsentTest`). **TODO:** the Settings switch UI itself (milestone 2); it calls `AnalyticsConsent.set(enabled)`.
 - No advertising ID or ad-services permissions in the merged manifest (`ManifestTest.noAdvertisingId`).

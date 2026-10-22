@@ -39,20 +39,31 @@
   <img src="apple-touch-icon.png" alt="">
   <h1>Statly · Privacy Policy</h1>
 </header>
-<p class="meta">Effective date: 21 October 2026 · App: Statly (Android, package <code>com.statly.app</code>)</p>
+<p class="meta">Effective date: 21 October 2026 · Last updated: 22 October 2026 (Statly now measures with your phone) · App: Statly (Android, package <code>com.statly.app</code>)</p>
 
 <div class="summary">
-  <p><strong>In short:</strong> Statly shows your steps, sleep, heart rate and workouts from Health Connect, with goals, streaks and badges. It only <strong>reads</strong> your health data, and that data <strong>stays on your phone</strong>. It is never uploaded to us, sold, shared, or used for advertising. There is no account and no advertising. The app sends anonymous usage statistics and crash reports, which never contain your health data. You can turn them off at any time in Settings.</p>
+  <p><strong>In short:</strong> Statly counts your steps and estimates your sleep <strong>with your phone itself</strong>, and shows them with goals, streaks, badges and widgets. If you choose, it can also <strong>read</strong> data from a watch through Health Connect. All of this data <strong>stays on your phone</strong>. It is never uploaded to us, sold, shared, or used for advertising. There is no account and no advertising. The app sends anonymous usage statistics and crash reports, which never contain your health data. You can turn them off at any time in Settings.</p>
 </div>
 
 <h2>1. Who we are</h2>
 <p>Statly is an Android app published by an independent developer ("we", "us"). Contact details are at the end of this policy.</p>
 
-<h2>2. Health data the app reads, and where it stays</h2>
-<p>Statly uses <strong>Health Connect</strong>, Android's on-device store for health and fitness data. With your permission, Statly <strong>reads</strong> the following types:</p>
+<h2>2. Activity and sleep measured by your phone</h2>
+<p>With Android's <strong>"Physical activity"</strong> permission, Statly measures the following on your phone. It uses your phone's motion sensors and the on-device <strong>Recording API</strong> and <strong>Sleep API</strong> of Google Play services:</p>
+<div class="table-wrap"><table>
+  <tr><th>Data</th><th>What Statly uses it for</th></tr>
+  <tr><td>Steps</td><td>Your daily step count, step goal, streaks, trends, badges and widgets</td></tr>
+  <tr><td>Brisk-walking minutes</td><td>Your active minutes</td></tr>
+  <tr><td>Sleep, estimated (bedtime, wake-up and duration)</td><td>Last night's sleep, sleep trends and sleep badges</td></tr>
+</table></div>
+<p><strong>Distance and calories are estimates</strong> worked out from your steps and the optional height and weight you enter in Settings. Until you enter them, typical values are used.</p>
+<p>This data is processed and stored <strong>only on your device</strong>. It is <strong>never uploaded to us or to anyone else</strong>. It is excluded from Android cloud backup and device-to-device transfer, and we have no way to see it. You can turn the permission off at any time in Android's settings. Statly then stops counting, and what it already stored stays on your phone until you clear it.</p>
+
+<h2>2b. Optional: data from your watch through Health Connect</h2>
+<p>Importing from a watch is <strong>optional</strong>; Statly works fully without it. If you choose "Import from your watch" in Settings, Statly uses <strong>Health Connect</strong>, Android's on-device store for health and fitness data. With your permission, Statly <strong>reads</strong> these types:</p>
 <div class="table-wrap"><table>
   <tr><th>Health Connect data type</th><th>What Statly uses it for</th></tr>
-  <tr><td>Steps</td><td>Your daily step count, step goal, streaks and step badges</td></tr>
+  <tr><td>Steps</td><td>Your daily steps; a watch's count is used instead of the phone's on days it has data, never added to it</td></tr>
   <tr><td>Distance</td><td>Distance badges, for example walking a marathon distance in a week</td></tr>
   <tr><td>Floors climbed</td><td>Floor badges</td></tr>
   <tr><td>Sleep (sessions and stages)</td><td>Last night's sleep, sleep stages, sleep trends and sleep badges</td></tr>
@@ -62,16 +73,16 @@
 </table></div>
 <p>Statly may also ask for two optional Health Connect permissions:</p>
 <ul>
-  <li><strong>Access past data</strong>, so it can show history and streaks from before you installed it.</li>
+  <li><strong>Access past data</strong>, so it can show history and streaks from before you started importing.</li>
   <li><strong>Access data in the background</strong>, so its home-screen widgets can stay up to date.</li>
 </ul>
-<p>You choose which types to allow, and you can change or remove access at any time in Health Connect's settings. <strong>Statly never writes, changes or deletes data in Health Connect.</strong></p>
-<p>The health data Statly reads, and the results it works out from it (your daily totals, streaks and earned badges), are processed and stored <strong>only on your device</strong>. They are <strong>not sent to us or to anyone else</strong>, and we have no way to see them.</p>
+<p>You choose which types to allow, and you can change or remove access at any time in Health Connect's settings. <strong>Statly never writes, changes or deletes data in Health Connect.</strong> Imported data, and the results worked out from it, are processed and stored <strong>only on your device</strong>. Turning the import off deletes the imported copy from Statly.</p>
 
 <h2>3. How we use health data (Limited Use)</h2>
-<p>Statly's use of information received from Health Connect follows the <a href="https://support.google.com/googleplay/android-developer/answer/12991134">Google Play policy for Android health permissions (Health Connect)</a>, including its Limited Use requirements. In particular, health data from Health Connect:</p>
+<p>Everything below applies both to the activity and sleep your phone measures and to data imported from Health Connect. Statly's use of information received from Health Connect follows the <a href="https://support.google.com/googleplay/android-developer/answer/12991134">Google Play policy for Android health permissions (Health Connect)</a>, including its Limited Use requirements. In particular, health data from Health Connect:</p>
 <ul>
   <li>is used only to provide the features you see in the app: today's view, trends, goals, streaks, badges and widgets;</li>
+  <li>is never uploaded: it stays on your device;</li>
   <li>is <strong>never sold</strong>, and never transferred to anyone, including advertisers, data brokers and information resellers;</li>
   <li>is <strong>never used for advertising</strong>, and never used to determine credit-worthiness or for lending purposes;</li>
   <li>is never read by a human, and never used to train AI or machine-learning models.</li>
@@ -79,7 +90,7 @@
 
 <h2>4. Usage statistics and crash reports</h2>
 <p>To learn which features help, where people get stuck and why the app crashes, Statly uses Google Analytics for Firebase and Firebase Crashlytics, both provided by Google. This is on by default. You can turn it off at any time in Settings → "Share anonymous usage stats".</p>
-<p>These reports record <strong>what you do in the app, never your health data</strong>. Examples: that the Welcome screen was shown, that Health Connect was connected, that a badge was earned (only the badge's name), that the Pro screen was opened, or that a purchase succeeded or was cancelled. They never contain step counts, sleep times, heart rates, workouts or any other value read from Health Connect.</p>
+<p>These reports record <strong>what you do in the app, never your health data</strong>. Examples: that the Welcome screen was shown, that the Physical activity permission was allowed or declined, that a watch import was connected, that a badge was earned (only the badge's name), that the Pro screen was opened, or that a purchase succeeded or was cancelled. They never contain step counts, sleep times, heart rates, workouts, height, weight or any other health value.</p>
 <p>Firebase also collects standard technical information: device model, Android version, app version, country, and a random app-instance identifier. Crash reports contain the technical state of the app when it crashed. Google processes this data under its own <a href="https://policies.google.com/privacy">privacy policy</a> and the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
 
 <h2>5. Purchases</h2>
@@ -94,7 +105,7 @@
 </ul>
 
 <h2>7. Keeping and deleting your data</h2>
-<p>Everything Statly stores lives in the app's private storage on your phone. To delete it, clear the app's storage in Android settings or uninstall the app. Your original data stays in Health Connect, which you control.</p>
+<p>Everything Statly stores lives in the app's private storage on your phone. To delete it, clear the app's storage in Android settings or uninstall the app. If you import from a watch, the original data stays in Health Connect, which you control.</p>
 <p>Usage statistics are kept by Google Analytics for up to 14 months. You can ask us to delete statistics linked to your app-instance identifier by contacting us.</p>
 
 <h2>8. Children</h2>
